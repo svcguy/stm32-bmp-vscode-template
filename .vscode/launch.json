@@ -1,0 +1,58 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Black Magic Probe",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "MIMode": "gdb",
+            "targetArchitecture": "arm",
+            "logging": {
+                "engineLogging": true
+            },
+            "program": "${workspaceRoot}/build/testProject.elf",
+            "miDebuggerPath": "arm-none-eabi-gdb",
+            "customLaunchSetupCommands": [
+                {
+                    "text": "cd ${workspaceRoot}/build"
+                },
+                {
+                    "text": "target extended-remote COM8"
+                },
+                {
+                    "text": "monitor tpwr enable"
+                },
+                {
+                    "text": "monitor swdp_scan"
+                },
+                {
+                    "text": "attach 1"
+                },
+                {
+                    "text": "file testProject.elf"
+                },
+                {
+                    "text": "load"
+                },
+                {
+                    "text": "cd ${workspaceRoot}"
+                },
+                {
+                    "text": "set mem inaccessible-by-default off"
+                },
+                {
+                    "text": "break main"
+                }
+            ],
+            "serverLaunchTimeout": "10000",
+            "windows": {
+                "miDebuggerPath": "arm-none-eabi-gdb.exe"
+            }
+        }
+    ]
+}
