@@ -29,8 +29,9 @@ This blog details the configuration of VSCode Intellisense and Paths
 https://sites.google.com/site/hubmartin/arm/black-magic-probe-vs-code
 This blog details the setup of the debugger
 
-Right now, the only configuration is for STM32F4 and is only tested with the following hardware setup:
+Right now, the only tested configurations with the following hardware setups:
 Windows 10 - Black Magic Probe 2.1 Offical Hardware - STM32 Clicker 2 from Mikroelecktronica
+(WIP) Windows 10 - Black Magic Probe 2.1 Offical Hardware - STM32 "Blue Pill"
 
 Paths and COM port numbers will have to be adjusted if you use this for your system
 
