@@ -10,6 +10,7 @@
                 "${workspaceRoot}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
                 "${workspaceRoot}/Drivers/CMSIS/Include",
                 "${workspaceRoot}/Drivers/CMSIS/RTOS/Template",
+                "${workspaceRoot}/Lib/uart_printf",
                 "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include",
                 "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include-fixed",
                 "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/arm-none-eabi/include",
@@ -363,7 +364,7 @@
                 "__ULACCUM_FBIT__=32",
                 "__QQ_IBIT__=0",
                 "__ATOMIC_ACQ_REL=4",
-                "__ATOMIC_RELEASE=3"           
+                "__ATOMIC_RELEASE=3"
             ],
             "intelliSenseMode": "clang-x64",
             "browse": {
@@ -375,6 +376,7 @@
                     "${workspaceRoot}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
                     "${workspaceRoot}/Drivers/CMSIS/Include",
                     "${workspaceRoot}/Drivers/CMSIS/RTOS/Template",
+                    "${workspaceRoot}/Lib/uart_printf",
                     "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include",
                     "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include-fixed",
                     "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/arm-none-eabi/include",
@@ -396,6 +398,7 @@
                 "${workspaceRoot}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
                 "${workspaceRoot}/Drivers/CMSIS/Include",
                 "${workspaceRoot}/Drivers/CMSIS/RTOS/Template",
+                "${workspaceRoot}/Lib/uart_printf",
                 "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include",
                 "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include-fixed",
                 "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/arm-none-eabi/include",
@@ -749,7 +752,7 @@
                 "__ULACCUM_FBIT__=32",
                 "__QQ_IBIT__=0",
                 "__ATOMIC_ACQ_REL=4",
-                "__ATOMIC_RELEASE=3"           
+                "__ATOMIC_RELEASE=3"
             ],
             "intelliSenseMode": "clang-x64",
             "browse": {
@@ -761,6 +764,7 @@
                     "${workspaceRoot}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
                     "${workspaceRoot}/Drivers/CMSIS/Include",
                     "${workspaceRoot}/Drivers/CMSIS/RTOS/Template",
+                    "${workspaceRoot}/Lib/uart_printf",
                     "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include",
                     "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include-fixed",
                     "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/arm-none-eabi/include",
@@ -770,7 +774,9 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
-            }
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17"
         }
     ],
     "version": 3
