@@ -5,6 +5,8 @@ A basic template app that contains the following:
 All Intellisense configuration for STM32CubeMX HAL
 All Path configuration for STM32CubeMX HAL
 
+A very basic printf-like function that can be directed to a UART of your choice that can be #defined away
+
 The following tasks:
 Make - builds the embedded application using the CubeMX generated Makefile
 Clean - cleans the embedded application
@@ -32,6 +34,7 @@ This blog details the setup of the debugger
 Right now, the only tested configurations with the following hardware setups:
 Windows 10 - Black Magic Probe 2.1 Offical Hardware - STM32 Clicker 2 from Mikroelecktronica
 (WIP) Windows 10 - Black Magic Probe 2.1 Offical Hardware - STM32 "Blue Pill"
+Windows 10 - Black Magic Probe 2.1 Offical Harware - Open103z from Waveshare
 
 Paths and COM port numbers will have to be adjusted if you use this for your system
 

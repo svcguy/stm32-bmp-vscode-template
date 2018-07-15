@@ -1,5 +1,6 @@
 # STM32 CubeMX stuff
 *.mxproject
+*.scratch
 
 # VSCode stuff
 *.DB*
