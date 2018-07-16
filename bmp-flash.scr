@@ -1,7 +1,7 @@
 monitor tpwr enable
 monitor swdp_scan
 attach 1
-file ./build/testProject.elf
+file ./build/$ELFNAME
 load
 compare-sections
 kill

@@ -15,7 +15,7 @@
             "logging": {
                 "engineLogging": true
             },
-            "program": "${workspaceRoot}/build/testProject.elf",
+            "program": "${workspaceRoot}/build/${workspaceFolderBasename}.elf",
             "miDebuggerPath": "arm-none-eabi-gdb",
             "customLaunchSetupCommands": [
                 {
@@ -34,7 +34,7 @@
                     "text": "attach 1"
                 },
                 {
-                    "text": "file testProject.elf"
+                    "text": "file ${workspaceFolderBasename}.elf"
                 },
                 {
                     "text": "load"
@@ -49,7 +49,7 @@
                     "text": "break main"
                 }
             ],
-            "serverLaunchTimeout": "10000",
+            "serverLaunchTimeout": 10000,
             "windows": {
                 "miDebuggerPath": "arm-none-eabi-gdb.exe"
             }
