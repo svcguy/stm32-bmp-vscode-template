@@ -13,6 +13,6 @@ SPECS = -specs=nano.specs
 override BUILD_DIR = build/release
 endif
 
-override LDFLAGS = $(MCU) $(SPECS) -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl, -Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+override LDFLAGS = $(MCU) $(SPECS) -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
 
 include Makefile
