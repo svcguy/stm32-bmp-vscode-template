@@ -8,8 +8,9 @@
             "type": "shell",
             "command": "make",
             "args": [
-                "DEBUG=1",
-                "-j8"
+                "-j8",
+                "--file=masterMakefile",
+                "DEBUG=1"                
             ],
             "presentation": {
                 "echo": true,
@@ -86,6 +87,7 @@
             "command": "make",
             "args": [
                 "-j8",
+                "--file=masterMakefile",
                 "DEBUG=0"
             ],
             "presentation": {

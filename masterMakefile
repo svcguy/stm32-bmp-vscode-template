@@ -1,0 +1,18 @@
+#########################################################
+#  This is my Makefile
+#########################################################
+
+#########################################################
+#  Include the actual Makefile that does all the work
+#########################################################
+
+ifeq ($(DEBUG), 1)
+SPECS =
+else
+SPECS = -specs=nano.specs
+override BUILD_DIR = build/release
+endif
+
+override LDFLAGS = $(MCU) $(SPECS) -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl, -Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+
+include Makefile
