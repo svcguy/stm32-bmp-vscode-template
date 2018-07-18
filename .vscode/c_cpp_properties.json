@@ -1,4 +1,9 @@
 {
+    "env": {        
+        "C_DEFS": [
+            "${env:C_DEFS}"
+        ]
+    },
     "configurations": [
         {
             "name": "STM32F7",
@@ -19,8 +24,7 @@
                 "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/arm-none-eabi/include/sys"
             ],
             "defines": [
-                "USE_HAL_DRIVER",
-                "STM32F746xx",
+                "${C_DEFS}",
                 "__DBL_MIN_EXP__=(-1021)",
                 "__HQ_FBIT__=15",
                 "__UINT_LEAST16_MAX__=0xffff",
@@ -407,8 +411,7 @@
                 "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/arm-none-eabi/include/sys"
             ],
             "defines": [
-                "USE_HAL_DRIVER",
-                "STM32F407xx",
+                "${C_DEFS}",
                 "__DBL_MIN_EXP__=(-1021)",
                 "__HQ_FBIT__=15",
                 "__UINT_LEAST16_MAX__=0xffff",
@@ -795,8 +798,7 @@
                 "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/arm-none-eabi/include/sys"
             ],
             "defines": [
-                "USE_HAL_DRIVER",
-                "STM32F103xx",
+                "${C_DEFS}",
                 "__DBL_MIN_EXP__=(-1021)",
                 "__HQ_FBIT__=15",
                 "__UINT_LEAST16_MAX__=0xffff",
@@ -1162,9 +1164,7 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
-            },
-            "cStandard": "c11",
-            "cppStandard": "c++17"
+            }
         },
         {
             "name": "STM32F0",
@@ -1185,8 +1185,7 @@
                 "c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/arm-none-eabi/include/sys"
             ],
             "defines": [
-                "USE_HAL_DRIVER",
-                "STM32F032xx",
+                "${C_DEFS}",
                 "__DBL_MIN_EXP__=(-1021)",
                 "__HQ_FBIT__=15",
                 "__UINT_LEAST16_MAX__=0xffff",
