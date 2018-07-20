@@ -2,6 +2,11 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
+    "options": {
+        "env": {
+            "PATH":"C:\\MSYS2\\USR\\BIN;C:\\Program Files (x86)\\GNU Tools ARM Embedded\\6 2017-q2-update\\bin;C:\\Program Files\\PuTTY"
+        }
+    },
     "tasks": [
         {
             "label": "Make Debug",
@@ -9,7 +14,7 @@
             "command": "make",
             "args": [
                 "-j8",
-                "--file=masterMakefile",
+                "--file=masterMakefile.mk",
                 "DEBUG=1"                
             ],
             "presentation": {
@@ -44,6 +49,7 @@
             "command": "make",
             "args": [
                 "-j8",
+                "--file=masterMakefile.mk",
                 "clean"
             ],
             "presentation": {
@@ -87,7 +93,7 @@
             "command": "make",
             "args": [
                 "-j8",
-                "--file=masterMakefile",
+                "--file=masterMakefile.mk",
                 "DEBUG=0"
             ],
             "presentation": {

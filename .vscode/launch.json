@@ -9,17 +9,17 @@
             "name": "Black Magic Probe",
             "type": "cppdbg",
             "request": "launch",
-            "cwd": "${workspaceRoot}",
+            "cwd": "${workspaceFolder}",
             "MIMode": "gdb",
             "targetArchitecture": "arm",
             "logging": {
                 "engineLogging": true
             },
-            "program": "${workspaceRoot}/build/${workspaceFolderBasename}.elf",
+            "program": "${workspaceFolder}/build/${workspaceFolderBasename}.elf",
             "miDebuggerPath": "arm-none-eabi-gdb",
             "customLaunchSetupCommands": [
                 {
-                    "text": "cd ${workspaceRoot}/build"
+                    "text": "cd ${workspaceFolder}/build"
                 },
                 {
                     "text": "target extended-remote COM8"
@@ -40,7 +40,7 @@
                     "text": "load"
                 },
                 {
-                    "text": "cd ${workspaceRoot}"
+                    "text": "cd ${workspaceFolder}"
                 },
                 {
                     "text": "set mem inaccessible-by-default off"
