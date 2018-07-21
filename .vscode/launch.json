@@ -15,7 +15,7 @@
             "logging": {
                 "engineLogging": true
             },
-            "program": "${workspaceFolder}/build/${workspaceFolderBasename}.elf",
+            "program": "${workspaceFolder}/build/debug/${workspaceFolderBasename}.elf",
             "miDebuggerPath": "arm-none-eabi-gdb",
             "customLaunchSetupCommands": [
                 {

@@ -1,4 +1,4 @@
-Visual Studio Code Template for STM32 with Black Magic Probe
+Visual Studio Code Template for STM32CubeMX with Black Magic Probe
 
 A basic template app that contains the following:
 
@@ -31,11 +31,11 @@ This blog details the configuration of VSCode Intellisense and Paths
 https://sites.google.com/site/hubmartin/arm/black-magic-probe-vs-code
 This blog details the setup of the debugger
 
-Right now, the only tested configurations with the following hardware setups:
-Windows 10 - Black Magic Probe 2.1 Offical Hardware - STM32 Clicker 2 from Mikroelecktronica
-(WIP) Windows 10 - Black Magic Probe 2.1 Offical Hardware - STM32 "Blue Pill"
-Windows 10 - Black Magic Probe 2.1 Offical Harware - Open103z from Waveshare
+Paths and COM port numbers will have to be adjusted if you use this for your system.  Specifically:
+* c_cpp_properties.json - COMPILER_PATH, C_DEFS, C_INCLUDES
+* launch.json - GDB Com Port
+* tasks.json - Paths and GDB Com Port and UART Com Port
 
-Paths and COM port numbers will have to be adjusted if you use this for your system
+More info on the wiki
 
 Hope this is helpful to anyone else
